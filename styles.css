@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.tabs-container {
+    display: flex;
+    /* background-color: #333; */
+    padding: 10px;
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    color: #8367C7;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Kanit', sans-serif;
+}
+
+.tab:hover {
+    background-color: #5603AD;
+    color: #F0FFF1;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* Update your existing styles.css file */
+
+/* Reset default list styles */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style each list item */
+.todo-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Hide default checkbox */
+.todo-list input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the custom checkbox */
+.todo-list input[type="checkbox"] + label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+label {
+    font-family: 'Kanit', sans-serif;
+    color: #8367C7;
+}
+/* Style the checkbox icon using Material Icons */
+.todo-list input[type="checkbox"] + label::before {
+    content: '\e836'; /* Unicode for the checkbox_outline_blank icon in Material Icons */
+    font-family: 'Material Icons';
+    font-size: 24px;
+    margin-right: 10px;
+    color: #666;
+}
+
+/* Style checked checkbox icon and its label */
+.todo-list input[type="checkbox"]:checked + label::before {
+    content: '\e2e6'; /* Unicode for the check_box icon in Material Icons */
+    color: #4CAF50; /* Green color for checked state */
+}
+
+body {
+    margin: 0;
+}
+
+#slideshow-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.video-slide {
+    text-align: center;
+}
+
+.video-slide img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+h3, p {
+    margin: 10px 0;
+}

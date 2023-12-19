@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anesthesia Precheck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="height: 100%; width: 100%; background: #A1FFCE;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ justify-content: center; align-items: center; display: flex; flex-direction: column;">
+    <div style="height: 100vh; width: 70vw; justify-content: space-around; align-items: center; display: flex;">
+        <h1 style="font-size: 7vh; font-family: 'Kanit', sans-serif; color: #5603AD;">Anesthesia <br> Precheck ✈️</h1>
+        <div>
+            <h1 style="font-size: 5vh; font-family: 'Kanit', sans-serif; color: #5603AD;">Welcome, <br> Prof. Elizabeth Román! </h1>
+            <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7;"> This is your personalized portal for a step-by-step guide <br> preparing you for surgery.</p>
+        </div>
+    </div>
+    <div class="tabs-container">
+        <div class="tab" onclick="changeTab('tab1')">Instructions</div>
+        <div class="tab" onclick="changeTab('tab2')">Surgery</div>
+        <div class="tab" onclick="changeTab('tab3')">Anesthesia</div>
+    </div>
+
+    <div id="tab1" class="tab-content" style="height: 100vh; width: 80vw;">
+        <h2 style="font-size: 5vh; font-family: 'Kanit', sans-serif; color: #8367C7; margin-right: auto; margin-left: 3%; margin-bottom: 1%;">Pre-Op Instructions</h2>
+        <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7;  margin-left: 3%; margin-bottom: 3%;">
+            The day before surgery a nurse from Same Day Surgery will call you after 12:00pm to give you your arrival time.  If you do not receive a call before 3:00 pm make sure to call (123) 456-7890. 
+            The Operating Room's front desk is located at the fifth floor (turn to the left after the elevator).
+        </p>
+        <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">Diet before surgery</h3>
+        <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; ">
+            <ul class="todo-list" style="margin-right: auto; margin-left: 5%;">
+                <li>
+                    <input type="checkbox" id="task1" name="tasks">
+                    <label for="task1">Patients can have nothing to eat or drink after midnight prior to the procedure.</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task2" name="tasks">
+                    <label for="task2">If you are to drink any medications on the day of surgery, you may have a SIP of water just enough to get them down.</label>
+                </li>
+            </ul>        
+        </p>
+        <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">Medications</h3>
+        <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; ">
+            <ul class="todo-list" style="margin-right: auto; margin-left: 5%;">
+                <li>
+                    <input type="checkbox" id="task3" name="tasks">
+                    <label for="task3">Take the day of surgery: Lisinopril 10 mg + Synthroid 100 mcg.</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task4" name="tasks">
+                    <label for="task4">Take the day before surgery (discontinue the day of surgery): Metformin 1,000 mg.</label>
+                </li>
+            </ul>        
+        </p>
+        <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">Clothing</h3>
+        <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; ">
+            <ul class="todo-list" style="margin-right: auto; margin-left: 5%;">
+                <li>
+                    <input type="checkbox" id="task5" name="tasks">
+                    <label for="task5">Do not wear tight cloths (better to wear joggers or a pajama).</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task6" name="tasks">
+                    <label for="task6">Please remove any jewelry before arriving.</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task7" name="tasks">
+                    <label for="task7">If you have removable dental prostheses or contact lenses please remove them as well.</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task8" name="tasks">
+                    <label for="task8">Please do not wear lotion, powder, deodorant, makeup, or alcohol-based hair products (e.g., gels, hairspray).</label>
+                </li>
+
+            </ul>        
+        </p>
+        <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">Additional information</h3>
+        <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; margin-right: auto; margin-left: 5%; ">
+            <ul class="todo-list" style="margin-right: auto; margin-left: 5%;">
+                <li>
+                    <input type="checkbox" id="task9" name="tasks">
+                    <label for="task9">
+                        You must bring someone over the age of 21 with you to stay at the hospital, drive you home, and stay with you for approximately 24 hours. This person will be the “contact” person for the doctor when your procedure is finished.  
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task10" name="tasks">
+                    <label for="task10">Insurance card, ID, labs performed outpatient if any, list of medications.</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task11" name="tasks">
+                    <label for="task11">If you have removable dental prostheses or contact lenses please remove them as well.</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task12" name="tasks">
+                    <label for="task12"> Underpants, cellphone/charger, nightgown, hairbrush, headphones, loose clothing, socks, pen/notebook, blankets, pillows, toiletries, slippers, robe, toothbrush/toothpaste, medication, glasses, CPAP machine, walker, etc.</label>
+                </li>
+
+            </ul>
+            <br><br>  
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7;">
+                    FOR ANY QUESTIONS YOU MAY CALL (123) 456-7890
+                </p>
+            </div>    
+        </p>
+        <br>
+        <br>
+
+
+    </div>
+    <div id="tab2" class="tab-content" style="height: 100vh; width: 80vw;">
+        <h2 style="font-size: 5vh; font-family: 'Kanit', sans-serif; color: #8367C7; margin-right: auto; margin-left: 3%; margin-bottom: 1%;">Right Knee Arthroplasty</h2>
+        <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7;  margin-left: 3%; margin-bottom: 3%;">Knee arthroplasty replaces parts of injured or worn-out knee joints.</p>
+        <div>
+            <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">What for?</h3>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%;" >
+                The surgery can help ease the pain and make the knee work better.
+            </p>
+        </div>
+        <div>
+            <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">What happens during the procedure?</h3>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%;" >
+                Damaged bone and cartilage are replaced with parts made of metal and plastic.
+            </p>
+        </div>
+        <div>
+            <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">Why it’s done?</h3>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%;" >
+                Most common reason is to ease pain caused by arthritis. People who need knee
+                replacement surgery usually have problems walking, climbing stairs and getting
+                up out of chairs.
+            </p>
+        </div>
+        <div>
+            <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">What are the Risks?</h3>
+            <h4 style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%; margin: 0;" >Blood clots</h4>
+            <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 7%;" >
+                Surgeons typically recommend blood-thinning medications to prevent this
+                risk. Most common location for blood clots is in the leg, but they can also
+                travel to the lungs and become deadly.
+            </p>
+            <h4 style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%; margin: 0;" >Nerve damage</h4>
+            <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 7%;" >
+                Nerves in the area where the implant is placed can be injured. 
+                Nerve damage can cause numbness, weakness, and pain.
+            </p>
+            <h4 style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%; margin: 0;" >Infection</h4>
+            <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 7%;" >
+                Infection can occur at the incision site or in the deeper tissue.
+                Surgery is sometimes needed to treat an infection.
+            </p>
+        </div>
+        <div>
+            <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">How to prepare?</h3>
+            <h4 style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%; margin: 0;" >Food and medications</h4>
+            <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 7%;" >
+                Your doctor will advise you to stop taking certain medications and dietary
+                supplements before your surgery. You’ll likely also be instructed not to eat anything after midnight the day
+                of your surgery.
+            </p>
+            <h4 style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%; margin: 0;" >Prepare for your recovery</h4>
+            <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 7%;" >
+                For several weeks post procedure, you might need to use crutches or a
+                walker. Make sure to have someone that can care for you after surgery and help
+                with everyday tasks, such as cooking, bathing, and doing laundry.
+            </p>
+        </div>
+        <div>
+            <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">What to expect?</h3>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%;" >
+                When checking in for your surgery, you’ll be asked to remove your clothes and
+                put on a hospital gown.
+            </p>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%;" >
+                Anesthesia care will be once again discussed and consent documentation will be
+                check for the surgery and the anesthesia care.
+            </p>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%;" >
+                Surgery might take one to two hours, where the surgeon will make an incision
+                over the knee, remove the diseased and damaged bone and cartilage, leaving
+                healthy bone intact. Implants will be place into the thighbone, shinbone, and
+                kneecap, as replacements.
+            </p>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%;" >
+                After procedure, you’ll rest in recovery area for a short time.
+            </p>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%;" >
+                Hospital stay will depend on the individual needs.
+            </p>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%;" >
+                Risk of blood clots increases after knee replacement surgery. To prevent this
+                complication, you may need to: 
+            </p>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 7%;" >
+                Move early
+            </p>
+            <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 9%;" >
+                You’ll be encouraged to sit up and walk with crutches or a walker
+                soon after surgery.
+            </p>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 7%;" >
+                Apply pressure
+            </p>
+            <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 9%;" >
+                Both during and after surgery, you might war elastic compression
+                stockings or inflatable air sleeves on your lower legs.
+            </p>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 7%;" >
+                Take blood thinners
+            </p>
+            <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 9%;" >
+                Your surgeon might prescribe an injected or oral blood thinner
+                after surgery.
+            </p>
+            
+        </div>
+        <div>
+            <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">What are the results?</h3>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%;" >
+                Knee replacement may provide pain relief, improved mobility, and better quality
+                of life.
+            </p>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%;" >
+                After recovery, you can engage in various low-impact activities, such as walking,
+                swimming, golfing, or biking.
+            </p>
+            <p style="font-size: 20px; font-weight: 900; font-family: 'Kanit', sans-serif; color: #8367C7; padding-left: 5%;" >
+                You’re health care team should discuss daily activities post-procedure..
+            </p>
+        </div>
+        <br><br>  
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7;">
+                FOR ANY QUESTIONS YOU MAY CALL (123) 456-7890
+            </p>
+        </div>   
+        <br> <br>
+    </div>
+    <div id="tab3" class="tab-content" style="height: 100vh; width: 80vw; margin-bottom: 30%;">
+        <h2 style="font-size: 5vh; font-family: 'Kanit', sans-serif; color: #8367C7; margin-right: auto; margin-left: 3%; margin-bottom: 1%;">Anesthesia</h2>
+        <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7;  margin-left: 3%; margin-bottom: 3%;">Below are the options of anesthetic techniques available for orthopedic surgeries.</p>
+        <div>
+            <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">Femoral Nerve Block</h3>
+            <div style="display: flex; justify-content: space-between;">
+                <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; padding-right: 5%;">
+                    Typically, this peripheral block is performed after the initial IV drug administration, so patient won’t remember this part of the process. A femoral nerve block is a procedure where a local anesthetic is injected near the femoral nerve in the groin area to temporarily numb the nerve. This helps manage pain during and after certain lower limb surgeries or procedures. You are typically awake during the procedure, and the effects provide temporary pain relief. The numbing effect covers the thigh and knee areas. The procedure is commonly used for knee surgeries. The healthcare team monitors your vital signs for safety, and after the surgery, they may provide additional pain management options. Your healthcare provider will discuss the procedure with you beforehand and address any questions or concerns you may have.
+                </p>
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/sfuzo94YTtc" frameborder="0" allowfullscreen></iframe>
+            </div>      
+        </div>
+        <br>
+        <div>
+            <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">MAC Anesthesia</h3>
+            <div style="display: flex; justify-content: space-between;">
+                <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; padding-right: 5%;" >
+                    MAC anesthesia, or Monitored Anesthesia Care, is a type of anesthesia used for specific medical procedures. Unlike general anesthesia, it keeps you conscious but in a relaxed state, often referred to as "twilight" anesthesia. The anesthesia team closely monitors your vital signs and administers medications through an IV for pain control. You can respond to verbal cues during the procedure, and recovery is typically quicker compared to general anesthesia. MAC anesthesia is commonly used for minor surgeries and diagnostic tests, providing a balance between comfort and medical intervention. Your healthcare team will discuss the plan with you beforehand and address any concerns you may have.
+                </p>
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/VyPenyNdJ3U" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <br>
+        <div>
+            <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%; width: 100%;">General Anesthesia & Spinal Anesthesia</h3>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; padding-right: 5%;">
+                    General anesthesia is a controlled, reversible state of unconsciousness induced by medications during surgery. It ensures you don't feel pain, and you're unaware of the procedure. The process involves preparation, administering drugs through an IV or mask, close monitoring of vital signs, adjustment of drug levels, and a gradual awakening after surgery. The anesthesia team prioritizes your safety and well-being throughout the entire process. If you have questions or concerns, feel free to discuss them with your anesthesia provider before the procedure.
+                    <br> <br>
+                    Spinal anesthesia is a type of anesthesia used for certain surgeries. Instead of putting you to sleep, the anesthetic is injected into the lower back, numbing the nerves in the spinal cord and blocking pain sensation in the lower part of your body. You remain conscious during the procedure, and the effects are temporary. The medical team closely monitors your vital signs for safety. After the surgery, the anesthesia wears off, and you recover with the guidance of the healthcare team. Possible side effects are generally managed by the medical team. It's a well-established technique for effective pain relief during
+
+                    specific surgical procedures. <br> <br>
+                    Your healthcare team will discuss the procedure with you beforehand to address any questions or concerns.
+                </p>
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/cJPRu_0jt74" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <br>
+        
+        <div>
+            <h3 style="font-size: 3vh; font-family: 'Kanit', sans-serif; color: #5603AD; margin-right: auto; margin-left: 1%;">Recovery</h3>
+            <div style="display: flex; justify-content: space-between;">
+                <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7; padding-right: 5%;">
+                    After surgery, you'll wake up in a recovery area where healthcare professionals will monitor your vital signs and manage any pain or discomfort. They'll keep you informed about the surgery, provide post-operative instructions, and may allow family visits. Depending on your progress, you'll either be discharged home or transferred to a hospital room. Follow-up care instructions are given for at-home recovery, including rest, medication management, and any necessary restrictions. Regular communication with your healthcare team and attending follow-up appointments are important for a successful recovery. If you have concerns, don't hesitate to contact your healthcare provider.
+                </p>
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/VyPenyNdJ3U" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <br><br>  
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <p style="font-size: 2vh; font-family: 'Kanit', sans-serif; color: #8367C7;">
+                FOR ANY QUESTIONS YOU MAY CALL (123) 456-7890
+            </p>
+        </div>  
+        <br><br>
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
